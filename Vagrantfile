@@ -116,6 +116,8 @@ Vagrant.configure('2') do |config|
     prl.name = config.vm.hostname
     prl.cpus = cpus
     prl.memory = memory
+    prl.update_guest_tools = true
+    prl.customize ["set", :id, "--longer-battery-life", "off"]
   end
 
 end
