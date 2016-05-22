@@ -39,7 +39,7 @@ project_shared_children:
 # project_environment:
 #   WP_ENV: "production"
 project_environment:
-  WP_ENV: "{{ project.env.wp_env }}"
+  WP_ENV: "{{ env }}"
 
 # Files or folders to remove from the source when deploying
 project_unwanted_items: ['.git']
