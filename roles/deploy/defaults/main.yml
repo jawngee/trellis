@@ -43,3 +43,6 @@ project_environment:
 
 # Files or folders to remove from the source when deploying
 project_unwanted_items: ['.git']
+
+# - default is 'current'
+project_current_path: "{{ project.current_path | default('current') }}"
